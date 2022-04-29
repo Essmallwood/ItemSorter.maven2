@@ -16,8 +16,8 @@ public class NeutralCompareToTest {
         // given
         Comparator<Item> idComparator = (Comparator<Item>) new IdComparator();
         Long id = 0L;
-        Item item1 = new Item(id, null, null);
-        Item item2 = new Item(id, null, null);
+        Item item1 = new Item(id, null, 40.0);
+        Item item2 = new Item(id, null, 30.0);
 
         // when
         Integer comparisonValue = idComparator.compare(item2, item1);
@@ -31,8 +31,8 @@ public class NeutralCompareToTest {
         // given
         Comparator<Item> idComparator = (Comparator<Item>) new IdComparator();
         Long id = 1L;
-        Item item1 = new Item(id, null, null);
-        Item item2 = new Item(id, null, null);
+        Item item1 = new Item(id, null, 20.0);
+        Item item2 = new Item(id, null, 10.0);
 
         // when
         Integer comparisonValue = idComparator.compare(item2, item1);
@@ -46,8 +46,8 @@ public class NeutralCompareToTest {
         // given
         Comparator<Item> idComparator = (Comparator<Item>) new IdComparator();
         Long id = 2L;
-        Item item1 = new Item(id, null, null);
-        Item item2 = new Item(id, null, null);
+        Item item1 = new Item(id, null, 19.0);
+        Item item2 = new Item(id, null, 17.0);
 
         // when
         Integer comparisonValue = idComparator.compare(item2, item1);
@@ -62,8 +62,8 @@ public class NeutralCompareToTest {
         // given
         Comparator<Item> idComparator = (Comparator<Item>) new IdComparator();
         Long id = 3L;
-        Item item1 = new Item(id, null, null);
-        Item item2 = new Item(id, null, null);
+        Item item1 = new Item(id, null, 34.0);
+        Item item2 = new Item(id, null, 12.0);
 
         // when
         Integer comparisonValue = idComparator.compare(item2, item1);
@@ -77,8 +77,8 @@ public class NeutralCompareToTest {
         // given
         Comparator<Item> idComparator = (Comparator<Item>) new IdComparator();
         Long id = 4L;
-        Item item1 = new Item(id, null, null);
-        Item item2 = new Item(id, null, null);
+        Item item1 = new Item(id, null, 13.0);
+        Item item2 = new Item(id, null, 16.0);
 
         // when
         Integer comparisonValue = idComparator.compare(item2, item1);
@@ -92,8 +92,8 @@ public class NeutralCompareToTest {
         // given
         Comparator<Item> idComparator = (Comparator<Item>) new IdComparator();
         Long id = 5L;
-        Item item1 = new Item(id, null, null);
-        Item item2 = new Item(id, null, null);
+        Item item1 = new Item(id, null, 56.0);
+        Item item2 = new Item(id, null, 16.0);
 
         // when
         Integer comparisonValue = idComparator.compare(item2, item1);

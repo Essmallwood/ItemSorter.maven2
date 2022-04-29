@@ -15,8 +15,8 @@ public class NegativeCompareToTest {
     public void test1() {
         // given
         Comparator<Item> idComparator = (Comparator<Item>)new IdComparator();
-        Item item1 = new Item(0L, null, null);
-        Item item2 = new Item(1L, null, null);
+        Item item1 = new Item(0L, "Car", 4.0);
+        Item item2 = new Item(1L, "Toy", 5.0);
 
         // when
         Integer comparisonValue = idComparator.compare(item1, item2);
@@ -29,8 +29,8 @@ public class NegativeCompareToTest {
     public void test2() {
         // given
         Comparator<Item> idComparator = (Comparator<Item>)new IdComparator();
-        Item item1 = new Item(1L, null, null);
-        Item item2 = new Item(2L, null, null);
+        Item item1 = new Item(1L, "Yogurt", 8.0);
+        Item item2 = new Item(2L, "Wheel", 100.0);
 
         // when
         Integer comparisonValue = idComparator.compare(item1, item2);
@@ -44,8 +44,8 @@ public class NegativeCompareToTest {
     public void test3() {
         // given
         Comparator<Item> idComparator = (Comparator<Item>)new IdComparator();
-        Item item1 = new Item(2L, null, null);
-        Item item2 = new Item(3L, null, null);
+        Item item1 = new Item(2L, "Door", 13.0);
+        Item item2 = new Item(3L, "Window", 10.0);
 
         // when
         Integer comparisonValue = idComparator.compare(item1, item2);
@@ -58,8 +58,8 @@ public class NegativeCompareToTest {
     public void test4() {
         // given
         Comparator<Item> idComparator = (Comparator<Item>)new IdComparator();
-        Item item1 = new Item(3L, null, null);
-        Item item2 = new Item(4L, null, null);
+        Item item1 = new Item(3L, "Yo-yo", 189.0);
+        Item item2 = new Item(4L, "Rose", 56.0);
 
         // when
         Integer comparisonValue = idComparator.compare(item1, item2);
@@ -72,8 +72,8 @@ public class NegativeCompareToTest {
     public void test5() {
         // given
         Comparator<Item> idComparator = (Comparator<Item>)new IdComparator();
-        Item item1 = new Item(4L, null, null);
-        Item item2 = new Item(5L, null, null);
+        Item item1 = new Item(4L, "Fries", 3.0);
+        Item item2 = new Item(5L, "Burgers", 9.0);
 
         // when
         Integer comparisonValue = idComparator.compare(item1, item2);
@@ -87,8 +87,8 @@ public class NegativeCompareToTest {
     public void test6() {
         // given
         Comparator<Item> idComparator = (Comparator<Item>)new IdComparator();
-        Item item1 = new Item(5L, null, null);
-        Item item2 = new Item(6L, null, null);
+        Item item1 = new Item(5L, null, 30.0);
+        Item item2 = new Item(6L, null, 20.0);
 
         // when
         Integer comparisonValue = idComparator.compare(item1, item2);

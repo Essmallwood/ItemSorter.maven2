@@ -11,9 +11,9 @@ public class NullaryConstructorTest {
     @Test
     public void testNullaryConstructor() {
         // given
-        String expectedName = "";
+        String expectedName = null;
         Long expectedId = 0L;
-        Double expectedPrice = 0.01;
+        Double expectedPrice = 0.00;
 
         // when
         Item item = new Item();
